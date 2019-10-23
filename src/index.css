@@ -1,10 +1,23 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  font: 16px "Century Gothic", Futura, sans-serif;
+  text-align: center;
+  margin: 10px 20px;
+  min-width: 320px;
+  background-color: bisque;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 25px;
 }
 
 ol, ul {
   padding-left: 30px;
+}
+
+.game-board {
+  width: 300px;
+  margin: 0 auto;
 }
 
 .board-row:after {
@@ -18,18 +31,18 @@ ol, ul {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: rgb(216, 94, 94);
+  border: 1px solid #000;
   float: left;
-  font-size: 24px;
+  font-size: 100px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 100px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 100px;
 }
 
 .square:focus {
@@ -41,10 +54,11 @@ ol, ul {
 }
 
 .game {
-  display: flex;
-  flex-direction: row;
+  font-size: 16px;
 }
 
 .game-info {
-  margin-left: 20px;
+  display: block;
+  width: 150px;
+  margin: 10px auto 0;
 }
