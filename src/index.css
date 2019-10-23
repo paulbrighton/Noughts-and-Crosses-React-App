@@ -1,5 +1,5 @@
 body {
-  font: 16px Roboto, Futura, sans-serif;
+  font: 16px Roboto, sans-serif;
   text-align: center;
   margin: 10px 20px;
   min-width: 320px;
@@ -11,12 +11,19 @@ h1 {
   margin-bottom: 35px;
 }
 
+ol {
+  width: 120px;
+  margin: 0 auto;
+  text-align: center;
+}
 ol, ul {
-  padding-left: 30px;
+  padding-left: 15px;
+  list-style-type: none;
 }
 
 ol, ul ,li {
   margin: 5px 0;
+  text-align: center;
 }
 
 .game-board {
@@ -37,7 +44,7 @@ ol, ul ,li {
 .square {
   background: rgb(255, 42, 42);
   color: blanchedalmond;
-  border: 1px solid #000;
+  border: 1px solid blanchedalmond;
   float: left;
   font-size: 90px;
   font-weight: bold;
@@ -52,6 +59,10 @@ ol, ul ,li {
 
 .square:focus {
   outline: none;
+}
+
+.square:hover {
+  cursor: crosshair;
 }
 
 .kbd-navigation .square:focus {
@@ -71,9 +82,13 @@ ol, ul ,li {
 }
 
 li button {
-  background: rgb(255, 248, 238);
+  background: rgb(255, 242, 221);
   outline: none;
   border-radius: 3px;
   font-weight: 700;
-  padding: 1px 10px;
+  padding: 1px 10px 2px;
+}
+
+li button:hover {
+  cursor: pointer;
 }
